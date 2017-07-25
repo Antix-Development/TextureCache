@@ -22,7 +22,7 @@ function TextureCache:getTexture(name, filter) -- returns cached or new texture
   local texture
   if textures[name] then
     texture = textures[name] -- return cached texture
-    print("returning cached texture " .. name)
+--    print("returning cached texture " .. name)
   else
     texture = Texture.new(name, filter) -- create and return new texture
     textures[name] = texture
